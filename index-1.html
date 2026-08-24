@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <title>Barbearia Vikings | Barbearia em Guaratuba - PR</title>
+  <meta name="description" content="Barbearia Vikings em Guaratuba - PR. Corte de cabelo, barba, cortes infantis e muito mais. Agende seu horário pelo WhatsApp." />
+  <meta name="theme-color" content="#0b0a08" />
+  <meta name="author" content="Barbearia Vikings" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Barbearia Vikings" />
+  <meta property="og:title" content="Barbearia Vikings | Barbearia em Guaratuba - PR" />
+  <meta property="og:description" content="Corte de cabelo, barba, cortes infantis e muito mais. Agende seu horário pelo WhatsApp." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (runa dourada em SVG, sem arquivo externo) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0a08'/%3E%3Cpath d='M9 8 L16 24 L23 8' fill='none' stroke='%23c6a15b' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Barlow:ital,wght@0,400;0,500;0,600;1,500&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== Biblioteca de ícones SVG (reutilizáveis) ====== -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="seal" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width="2.6"/>
+        <g stroke="currentColor" stroke-width="1.4">
+          <line x1="50" y1="3" x2="50" y2="9"/><line x1="50" y1="91" x2="50" y2="97"/>
+          <line x1="3" y1="50" x2="9" y2="50"/><line x1="91" y1="50" x2="97" y2="50"/>
+          <line x1="16.5" y1="16.5" x2="20.7" y2="20.7"/><line x1="79.3" y1="79.3" x2="83.5" y2="83.5"/>
+          <line x1="83.5" y1="16.5" x2="79.3" y2="20.7"/><line x1="20.7" y1="79.3" x2="16.5" y2="83.5"/>
+        </g>
+        <path d="M35 34 L35 66 M35 34 L44 34 Q51 34 51 42 Q51 50 44 50 L35 50 M44 50 Q52 50 52 58 Q52 66 44 66 L35 66"
+              fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M55 34 L63 66 L71 34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+      <symbol id="i-scissors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/>
+      </symbol>
+      <symbol id="i-beard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 4v4a7 7 0 0 0 14 0V4"/><path d="M5 8c0 4 2 8 7 10 5-2 7-6 7-10"/><line x1="12" y1="4" x2="12" y2="10"/>
+      </symbol>
+      <symbol id="i-child" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="6" r="3"/><path d="M12 9v6"/><path d="M8 12h8"/><path d="M9 21l3-4 3 4"/>
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/>
+      </symbol>
+      <symbol id="i-beer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 8h9v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M15 10h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2"/><path d="M9 8V6a2 2 0 0 1 4 0v2"/>
+      </symbol>
+      <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 11l8-7 8 7"/><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"/><path d="M10 20v-5h4v5"/>
+      </symbol>
+      <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-diamond" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18"/><path d="M12 3 8 9l4 12 4-12z"/>
+      </symbol>
+      <symbol id="i-chair" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/><path d="M4 10h16v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M7 16v4"/><path d="M17 16v4"/>
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/>
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+      </symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.35-.5.05-.98.24-3.3-.7-2.79-1.1-4.55-3.98-4.69-4.16-.14-.18-1.12-1.49-1.12-2.85 0-1.35.71-2.02.96-2.29.24-.27.53-.34.71-.34.18 0 .36 0 .51.01.16.01.39-.06.6.46.24.55.79 1.9.86 2.04.07.14.12.31.02.49-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.29.29-.13.57.16.27.72 1.19 1.55 1.93 1.07.95 1.96 1.25 2.24 1.39.28.14.44.12.6-.07.18-.2.7-.81.89-1.09.18-.27.37-.23.62-.14.25.09 1.6.75 1.87.89.28.14.46.2.53.32.07.12.07.68-.17 1.36z"/>
+      </symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>
+      </symbol>
+      <symbol id="i-google" viewBox="0 0 24 24">
+        <path fill="#c6a15b" d="M21.35 11.1H12v3.2h5.3c-.23 1.4-1.6 4.1-5.3 4.1a5.9 5.9 0 0 1 0-11.8c1.86 0 3.1.8 3.82 1.48l2.6-2.5C16.9 3.9 14.7 3 12 3a9 9 0 1 0 0 18c5.2 0 8.64-3.65 8.64-8.79 0-.59-.06-1.04-.29-2.11z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a href="#servicos" class="sr-only">Pular para os serviços</a>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header" id="topo">
+    <div class="wrap">
+      <a class="brand" href="#topo" aria-label="Barbearia Vikings — início">
+        <svg class="seal" style="color:var(--gold)" aria-hidden="true"><use href="#seal"/></svg>
+        <span class="brand__name">Barbearia Vikings<small>Guaratuba · PR</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#localizacao">Onde estamos</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--gold header__cta js-wa" href="#" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg> Agendar
+      </a>
+
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#instagram">Instagram</a>
+    <a href="#localizacao">Onde estamos</a>
+    <a class="btn btn--gold js-wa" href="#"><svg aria-hidden="true"><use href="#i-wa"/></svg> Agendar pelo WhatsApp</a>
+    <p class="mm-foot">Estilo que impõe respeito</p>
+  </nav>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="hero__inner">
+          <svg class="hero__mark reveal" style="color:var(--gold)" aria-hidden="true"><use href="#seal"/></svg>
+          <p class="hero__kicker reveal" data-delay="1">Guaratuba · Paraná</p>
+          <h1 class="reveal" data-delay="2">
+            <span class="l1">Barbearia</span>
+            <span class="l2">Vikings</span>
+          </h1>
+          <p class="hero__impact reveal" data-delay="3">
+            Estilo<b>.</b> Força<b>.</b> Tradição<b>.</b>
+          </p>
+          <p class="hero__text reveal" data-delay="3">
+            Corte, barba e um bom ambiente, em <b>Guaratuba&nbsp;–&nbsp;PR</b>.
+            Barbearia e bar no mesmo espaço, para o homem que leva a própria imagem a sério.
+          </p>
+          <div class="hero__actions reveal" data-delay="4">
+            <a class="btn btn--gold js-wa" href="#" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-wa"/></svg> Agendar pelo WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#servicos">
+              Conhecer serviços <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+          <div class="hero__rating reveal" data-delay="5">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span><b>5,0</b> no Google · 35 avaliações</span>
+          </div>
+        </div>
+      </div>
+      <div class="scrollcue" aria-hidden="true">role <i></i></div>
+    </section>
+
+    <!-- ====== SOBRE ====== -->
+    <section class="band band--dark about" id="sobre">
+      <svg class="about__seal" aria-hidden="true"><use href="#seal"/></svg>
+      <div class="wrap about__wrap">
+        <div>
+          <div class="about__head reveal">
+            <span class="eyebrow">A Experiência</span>
+            <h2 class="section-title">Mais do que um corte.<br><span class="accent">Um ritual.</span></h2>
+          </div>
+          <div class="about__body reveal" data-delay="1">
+            <p>Na <strong>Barbearia Vikings</strong>, cada visita é feita para você sair
+              renovado — com a barba alinhada, o corte no ponto e a sensação de tempo bem gasto.</p>
+            <p>Barbearia e bar convivem no mesmo espaço, criando uma atmosfera diferente:
+              relaxada, masculina e com personalidade. Aqui, o cuidado com o visual encontra
+              um bom ambiente para conversar e desacelerar.</p>
+          </div>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar reveal" data-delay="1">
+            <svg class="ic" aria-hidden="true"><use href="#i-target"/></svg>
+            <h3>Precisão</h3>
+            <p>Técnica e atenção aos detalhes para um acabamento consistente.</p>
+          </article>
+          <article class="pillar reveal" data-delay="2">
+            <svg class="ic" aria-hidden="true"><use href="#i-diamond"/></svg>
+            <h3>Estilo</h3>
+            <p>Cortes atuais e clássicos, ajustados ao seu tipo de cabelo e rosto.</p>
+          </article>
+          <article class="pillar reveal" data-delay="3">
+            <svg class="ic" aria-hidden="true"><use href="#i-chair"/></svg>
+            <h3>Conforto</h3>
+            <p>Um ambiente pensado para você relaxar do começo ao fim.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVIÇOS ====== -->
+    <section class="band band--panel services" id="servicos">
+      <div class="wrap">
+        <div class="services__head reveal">
+          <span class="eyebrow">O que fazemos</span>
+          <h2 class="section-title">Nossos <span class="accent">serviços</span></h2>
+          <p class="lead">Do corte à barba, do público infantil ao atendimento noturno —
+            confirme valores e disponibilidade direto pelo WhatsApp.</p>
+        </div>
+
+        <div class="svc-grid">
+          <article class="svc reveal" data-delay="1">
+            <div class="svc__top"><svg class="ic" aria-hidden="true"><use href="#i-scissors"/></svg><h3>Corte de cabelo</h3></div>
+            <p>Cortes clássicos e modernos, finalizados com capricho e alinhados ao seu estilo.</p>
+          </article>
+          <article class="svc reveal" data-delay="2">
+            <div class="svc__top"><svg class="ic" aria-hidden="true"><use href="#i-beard"/></svg><h3>Aparar a barba</h3></div>
+            <p>Desenho, alinhamento e acabamento para deixar a barba com forma e definição.</p>
+          </article>
+          <article class="svc reveal" data-delay="3">
+            <div class="svc__top"><svg class="ic" aria-hidden="true"><use href="#i-child"/></svg><h3>Cortes infantis</h3></div>
+            <p>Atendimento tranquilo para os pequenos, com paciência e cuidado.</p>
+          </article>
+          <article class="svc reveal" data-delay="1">
+            <div class="svc__top"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg><h3>Serviço noturno</h3></div>
+            <p>Horários no período da noite para quem prefere se cuidar depois do expediente.</p>
+          </article>
+          <article class="svc reveal" data-delay="2">
+            <div class="svc__top"><svg class="ic" aria-hidden="true"><use href="#i-beer"/></svg><h3>Bar e barbearia</h3></div>
+            <p>Barbearia e bar no mesmo ambiente, para unir o cuidado com o visual a um bom momento.</p>
+          </article>
+          <article class="svc reveal" data-delay="3">
+            <div class="svc__top"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg><h3>Serviços domésticos</h3></div>
+            <p>Atendimento a domicílio conforme disponibilidade — combine os detalhes pelo WhatsApp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CTA / DIFERENCIAL ====== -->
+    <section class="band cta-band reveal">
+      <div class="wrap">
+        <span class="eyebrow center">O próximo passo</span>
+        <h2>Seu próximo visual <span class="accent">começa aqui.</span></h2>
+        <p>Escolha o melhor horário e garanta seu atendimento sem complicação.</p>
+        <a class="btn btn--gold js-wa" href="#" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg> Agendar pelo WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- ====== AVALIAÇÕES ====== -->
+    <section class="band band--dark reviews" id="avaliacoes">
+      <div class="wrap">
+        <span class="eyebrow center reveal">Reputação</span>
+        <h2 class="section-title reveal" data-delay="1" style="text-align:center">A confiança de <span class="accent">quem já sentou na cadeira</span></h2>
+        <div class="rating-badge reveal" data-delay="2">
+          <div class="score">5,0</div>
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <div class="count">35 avaliações</div>
+          <div class="src"><svg aria-hidden="true"><use href="#i-google"/></svg> Avaliações no Google</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== INSTAGRAM ====== -->
+    <section class="band band--panel instagram" id="instagram">
+      <div class="wrap">
+        <div class="ig__head reveal">
+          <span class="eyebrow">Acompanhe</span>
+          <h2 class="section-title">No <span class="accent">Instagram</span></h2>
+        </div>
+
+        <div class="ig__wrap">
+          <div class="ig-tiles reveal" aria-hidden="true">
+            <div class="ig-tile"><svg><use href="#i-scissors"/></svg></div>
+            <div class="ig-tile"><svg><use href="#seal"/></svg></div>
+            <div class="ig-tile"><svg><use href="#i-beard"/></svg></div>
+            <div class="ig-tile"><svg><use href="#i-beer"/></svg></div>
+            <div class="ig-tile"><svg><use href="#i-scissors"/></svg></div>
+            <div class="ig-tile"><svg><use href="#seal"/></svg></div>
+          </div>
+          <div class="ig__meta reveal" data-delay="1">
+            <p class="ig__handle">@barbershop.vikingsgtba</p>
+            <p class="ig__followers">+410 seguidores</p>
+            <p>Cortes, bastidores e novidades da Barbearia Vikings. Siga o perfil e fique por dentro.</p>
+            <a class="btn btn--gold" href="https://www.instagram.com/barbershop.vikingsgtba/" target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-ig"/></svg> Ver no Instagram
+            </a>
+            <p class="ig__note">As imagens ao lado são ilustrativas. As publicações reais estão no perfil do Instagram.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== LOCALIZAÇÃO ====== -->
+    <section class="band band--dark localizacao" id="localizacao">
+      <div class="wrap">
+        <div class="services__head reveal">
+          <span class="eyebrow">Onde estamos</span>
+          <h2 class="section-title">Venha nos <span class="accent">visitar</span></h2>
+        </div>
+
+        <div class="loc__wrap">
+          <div class="loc__info reveal">
+            <div class="loc__row">
+              <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>
+              <div>
+                <h3>Endereço</h3>
+                <p>Av. Piçarras, 1276 — Avenida dos Guarás
+                  <span>Guaratuba - PR · CEP 83280-000</span></p>
+              </div>
+            </div>
+            <div class="loc__row">
+              <svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>
+              <div>
+                <h3>Atendimento</h3>
+                <p>Abertura às 09h
+                  <span>Confirme os dias e horários pelo WhatsApp.</span></p>
+              </div>
+            </div>
+            <div class="loc__row">
+              <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>
+              <div>
+                <h3>Contato</h3>
+                <p>(41) 99896-1962
+                  <span>WhatsApp e telefone</span></p>
+              </div>
+            </div>
+            <a class="btn btn--gold" id="mapsBtn" href="#" target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-pin"/></svg> Abrir no Google Maps
+            </a>
+          </div>
+
+          <div class="loc__map reveal" data-delay="1">
+            <iframe
+              title="Mapa — Barbearia Vikings, Guaratuba - PR"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Av.%20Pi%C3%A7arras%2C%201276%20-%20Guaratuba%20-%20PR%2C%2083280-000&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTATO ====== -->
+    <section class="band band--panel contact" id="contato">
+      <div class="wrap">
+        <span class="eyebrow center reveal">Vamos nessa</span>
+        <h2 class="reveal" data-delay="1">Pronto para <span class="accent" style="color:var(--gold)">renovar o visual?</span></h2>
+        <a class="contact__phone reveal" data-delay="2" href="tel:+5541998961962">(41) 99896-1962</a>
+        <div class="contact__actions reveal" data-delay="3">
+          <a class="btn btn--gold js-wa" href="#" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-wa"/></svg> Agendar pelo WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="https://www.instagram.com/barbershop.vikingsgtba/" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-ig"/></svg> @barbershop.vikingsgtba
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="wrap">
+      <svg class="seal" aria-hidden="true"><use href="#seal"/></svg>
+      <div>
+        <p class="footer__name">Barbearia Vikings</p>
+        <p class="footer__loc">Guaratuba · Paraná</p>
+      </div>
+      <nav class="footer__links" aria-label="Links do rodapé">
+        <a class="js-wa" href="#" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/barbershop.vikingsgtba/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#localizacao">Localização</a>
+      </nav>
+      <p class="footer__tag">“Estilo que impõe respeito.”</p>
+      <p class="footer__legal">© <span id="year"></span> Barbearia Vikings · Guaratuba - PR</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="wa-float js-wa" href="#" rel="noopener" aria-label="Agendar pelo WhatsApp">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
